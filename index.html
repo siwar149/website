@@ -8,128 +8,120 @@
 	</head>
 
 	<body>
+		<header>
+			<div>
+			   <img src="logo.jpg" width="70" alt="Logotipo">
+			</div>
+			<h1>Siwar Ortiz' website</h1>
+			<nav>
+	                   <ul>
+                    		<li><a href="#">Inicio</a></li>
+                   		<li>Categoría I</li>
+                    		<li>Categoría II</li>
+                    		<li>Categoría III</li>
+                	   </ul>
+			</nav>
+		</header>
+		
 		<!--<script src="archivo.js"></script>-->
 		<!--Esto sirve para enlazar un archivo JavaScript-->
-		<h1>Siwar Ortiz' website</h1>
 		
-		<p>
+		<section class="wrapper">
+		   <section class="main>"
+		      <article>
+			<p>
 		
-		!Hola¡ actualmente me encuentro desarrollando esta paǵina. Como se puede leer en el título me llamo Siwar Ortiz. En mi tiempo libre me dedico a aprender sobre FreeSoftware y temas relacionados a programación en general. Eventualmente soy estudiante de economía... Anyway, dejaré un link a la página de la fundación para software libre ("<i>Free Software Foundation</i>") y una cita de uno de los economistas más razonables que ha existido hasta ahora...
+			!Hola¡ actualmente me encuentro desarrollando esta paǵina. 
+			Como se puede leer en el título me llamo Siwar Ortiz. En mi 
+			tiempo libre me dedico a aprender sobre FreeSoftware y temas 
+			relacionados a programación en general. Eventualmente soy 
+			estudiante de economía... Anyway, dejaré un link a la página
+			de la fundación para software libre ("<i>Free Software Foundation</i>")
+			y una cita de uno de los economistas más razonables que ha existido hasta ahora...
 
-		</p>
+			</p>
 		
-		<p>ps: Nadie debería usar redes sociales (spyware), son una perdida de tiempo... hagan sus propias páginas</p>
+			<p>ps: Nadie debería usar redes sociales (spyware), son una perdida de tiempo... 
+			hagan sus propias páginas</p>
 		
-		<p>
+			<p>
 		
-		<b>Las ideas y el conocimiento, el arte,
-		la hospitalidad, los viajes, estas son las
-		cosas que deberían, por su naturaleza, ser
-		intarnacionales</b>. Pero dejad que los
-		<span>articulos</span> sean hechos en casa, siempre que
-		sea <i>razonable</i> y convenientemente posible;
-		y sobre todo, dejad <strong>que las finanzas sean
-		antes que nada nacionales</strong>.<br/>John Maynard 
-		Keynes, 1936
+			<b>Las ideas y el conocimiento, el arte,
+			la hospitalidad, los viajes, estas son las
+			cosas que deberían, por su naturaleza, ser
+			intarnacionales</b>. Pero dejad que los
+			<span>articulos</span> sean hechos en casa, siempre que
+			sea <i>razonable</i> y convenientemente posible;
+			y sobre todo, dejad <strong>que las finanzas sean
+			antes que nada nacionales</strong>.<br/>John Maynard 
+			Keynes, 1936
 		
-		</p>
+			</p>
 
-		<img src="sani.png" alt="Imagen random" width="300"/>
-		<br/>		
+			<!--Estas son formas de poner enlaces en
+			la página que diseñes. Hay dos tipos de
+			enlaces: los absolutos (el primero) y los
+			relativos (el segundo)-->
+			<a target="_blank" href="https://www.ineteconomics.org/">Ir a INET</a>		
+			<!--<a href="sani.png">Riqueza</a>-->
+			<a target="_blank" href="https://www.fsf.org/">Free Software Foundation</a>
 
-		<!--Estas son formas de poner enlaces en
-		la página que diseñes. Hay dos tipos de
-		enlaces: los absolutos (el primero) y los
-		relativos (el segundo)-->
-		<a target="_blank" href="https://www.ineteconomics.org/">Ir a INET</a>		
-		<!--<a href="sani.png">Riqueza</a>-->
-		<a target="_blank" href="https://www.fsf.org/">Free Software Foundation</a>
+			<a href="mailto:siwar.ortiz@uarm.pe" 
+			title="Enviar correo a Siwar Ortiz">
+			Enviar Mail</a>
 
-		<a href="mailto:siwar.ortiz@uarm.pe" 
-		title="Enviar correo a Siwar Ortiz">
-		Enviar Mail</a>
+		      </article>
 
-		<hr/>
+			<hr/>
 
-		<h2>Quote</h2>		
-		
-		<p>
-		<blockquote>Las ideas y el conocimiento, el arte,
-		la hospitalidad, los viajes, estas son las
-		cosas que deberían, por su naturaleza, ser
-		intarnacionales. Pero dejad que los
-		articulos sean hechos en casa, siempre que
-		sea razonable y convenientemente posible;
-		y sobre todo, dejad que las finanzas sean
-		antes que nada nacionales.
-		</blockquote>
-		<cite>John Maynard Keynes, 1936</cite>
-		</p>
+			<p><b>Comentarios y sugerencias</b></p>
 
-		<!--Unordered list-->
-		<ul>
-		    <li><a href="#">Item I</a></li>
-		    <li>Item II</li> 
-			<ul>
-			    <li>Item I</li>
-			    <li>Item II</li>
-			</ul>
-		    <li>Item IV</li>
-		    <li>Item V</li>
-		</ul>
+			<form name="contact" method="POST" data-netlify="true">
+			  <p>
+			    <label>Your Name: <input type="text" name="name" /></label>   
+			  </p>
+			  <p>
+			    <label>Your Email: <input type="email" name="email" /></label>
+			  </p>
+			  <p>
+			    <label>Your Role: <select name="role[]" multiple>
+			      <option value="random guy">Leader</option>
+			      <option value="follower">Follower</option>
+			    </select></label>
+			  </p>
+			  <p>
+			    <label>Message: <textarea name="message"></textarea></label>
+			  </p>
+			  <p>
+			    <button type="submit">Send</button>
+			  </p>
+			</form>
+		   </section>
 
-		<!--Ordered list-->
-		<ol>
-                    <li>Item I</li>
-                    <li>Item II</li>
-                        <ol>
-                            <li>Item I</li>
-                            <li>Item II</li>
-                        </ol>
-                    <li>Item IV</li>
-                    <li>Item V</li>
-                </ol>
+		   <aside>
+                	<h2>Quote</h2>
 
-		<table>
-		   <tr>
-			<td>Elemento 11</td>
-                        <td>Elemento 12</td>
-                        <td>Elemento 13</td>
-		   </tr>
-		   <tr>
-                        <td>Elemento 21</td>
-                        <td>Elemento 22</td>
-                        <td>Elemento 23</td>
-                   </tr>
-                   <tr>
-                        <td>Elemento 31</td>
-                        <td>Elemento 32</td>
-                        <td>Elemento 33</td>
-                   </tr>
-		</table>
+	                <p>
+	                <blockquote>Las ideas y el conocimiento, el arte,
+	                la hospitalidad, los viajes, estas son las
+	                cosas que deberían, por su naturaleza, ser
+	                intarnacionales. Pero dejad que los
+	                articulos sean hechos en casa, siempre que
+	                sea razonable y convenientemente posible;
+	                y sobre todo, dejad que las finanzas sean
+	                antes que nada nacionales.
+	                </blockquote>
+	                <cite>John Maynard Keynes, 1936</cite>
+	                </p>
 
-		<p><b>Comentarios y sugerencias</b></p>
+		   </aside>
 
-		<form name="contact" method="POST" data-netlify="true">
-		  <p>
-		    <label>Your Name: <input type="text" name="name" /></label>   
-		  </p>
-		  <p>
-		    <label>Your Email: <input type="email" name="email" /></label>
-		  </p>
-		  <p>
-		    <label>Your Role: <select name="role[]" multiple>
-		      <option value="random guy">Leader</option>
-		      <option value="follower">Follower</option>
-		    </select></label>
-		  </p>
-		  <p>
-		    <label>Message: <textarea name="message"></textarea></label>
-		  </p>
-		  <p>
-		    <button type="submit">Send</button>
-		  </p>
-		</form>
+		</section>
+
+		<footer>
+		    <p>Siwar Ortiz - 2020</p>
+		</footer>
+
 	</body>
 
 </html>
