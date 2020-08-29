@@ -7,7 +7,7 @@ h1 {
 	color: red;
 }
 
-header, .main, footer {
+header, .wrapper, footer {
 	width: 90%;
 	max-width: 1000px;
 	margin: 20px auto;
