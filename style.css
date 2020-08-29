@@ -7,4 +7,28 @@ h1 {
 	color: red;
 }
 
+header, .main, footer {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
 
+header nav {
+	background: #5DC1B9;
+	overflow: hidden;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
