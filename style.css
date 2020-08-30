@@ -21,6 +21,8 @@ header, .main , footer {
 
 .menubar li a {
     	display: block;
+        color: #5DC1B9;
+        text-decoration: none;
 }
 
 .menubar {
@@ -46,7 +48,5 @@ header nav {
     	border: #444 solid 2px;
     	padding: 3px;
     	margin: 4px;
-	color: #5DC1B9;
-	text-decoration: none;
 }
 
