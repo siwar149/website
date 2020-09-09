@@ -5,7 +5,7 @@ body {
 
 h1 {
 	text-align: center;
-        text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68)
+        text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
 	color: crimson;
 	font-variant: small-caps;
 }
