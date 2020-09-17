@@ -20,6 +20,10 @@ header, .main , footer {
 	margin: 20px auto;
 }
 
+.main a {
+	color: #5DC1B9;
+}
+
 .menubar li a {
     	display: block;
         color: #5DC1B9;
