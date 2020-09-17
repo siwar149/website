@@ -25,7 +25,11 @@ header, .main , footer {
 }
 
 .main p {
-	color: #A4A9B0;
+	color: #808088;
+}
+
+.main p blockquote {
+	color: #808088;
 }
 
 .menubar li a {
