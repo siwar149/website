@@ -24,6 +24,10 @@ header, .main , footer {
 	color: #5DC1B9;
 }
 
+.main p {
+	color: #A4A9B0;
+}
+
 .menubar li a {
     	display: block;
         color: #5DC1B9;
