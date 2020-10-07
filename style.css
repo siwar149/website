@@ -10,6 +10,10 @@ footer {
 	font-size: larger;
 }
 
+footer a {
+        color: #5DC1B9;
+}
+
 h1 {
 	text-align: center;
         text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
