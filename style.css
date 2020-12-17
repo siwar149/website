@@ -25,7 +25,7 @@ h2 {
 	color: goldenrod;
 }
 
-h3 {
+.main h3 {
 	color: #D3D3D3;
 }
 
@@ -39,7 +39,7 @@ header, .main , footer {
 	color: #5DC1B9;
 }
 
-.main p {
+.main p,blockquote {
 	color: #D3D3D3;
 }
 
