@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+        <head>
+                <title>Siwar Ortiz</title>
+                <meta charset="utf-8"/>
+                <link rel="stylesheet" type='text/css' href="../style.css">
+                <link rel="shortcut icon"
+                type="image/x-icon" href="../images/me.ico">
+        </head>
+
+        <body>
+                <header><h1>Python scripts para automatizar documentos</h1></header>
+           <section class="main">
+		   <p>Cuando se escribe documentos <i>html</i> se suelen repetir ciertos patrones de texto, 
+		   que siempre se escribe <i>!DOCTYPE html</i>, la sección <i>head... /head</i>, etc. Con el
+		   objeto de automatizar el proceso de escritura de estas secciones se puede hacer un
+		   <i>script</i> en python. Esto implica que al ajecutar el <i>script</i> se creará un documento
+		   <i>html</i> con las secciones recurrentes ya escritas y uno solo tendrá que pasar a redactar
+		   la parte importante del documento: el contenido.
+		   </p>
+
+		   <p>El codigo inferior es un <i>script</i> muy simple que realiza exactamente lo descrito líneas
+		   arriba.</p>
+
+		   <pre><code>
+		   #! /usr/bin/python3
+                   # htmlTemplate.py - creates a basic template for html documents.
+                   # USAGE: python htmlTemplate.py <file_path> [en]
+                   # []: optional
+    
+                   import os
+                   import sys
+    
+                   # check if extension specified is ".html"
+                   if not sys.argv[1].endswith('.html'):
+                   raise Exception('File extension must be ".html".')
+   
+                   # create folder if folder specified doesn't exists.
+                   os.makedirs(os.path.dirname(sys.argv[1]), exist_ok=True)
+   
+                   # open and read template depending on which language is specified.
+                   if sys.argv[2] == 'en':
+                       t = open('/home/siwar/Documentos/python/own/plantilla_web_en.html')
+                       template = t.read()
+                       t.close()
+                   elif sys.argv[2] == 'es':
+                       t = open('/home/siwar/Documentos/python/own/plantilla_web.html')
+                       template = t.read()
+                       t.close()
+   
+                   # write contents of template to desired ".html" file.
+                   htmlFile = open(sys.argv[1], 'w')
+                   htmlFile.write(template)
+                   htmlFile.close()
+   
+                   print(sys.argv[1] + ' was created.')
+		   </code></pre>
+           </section>
+        </body>
+
+        <footer>por <a href="https://siwarortiz.xyz">Siwar Ortiz</a></footer>
+</html>
