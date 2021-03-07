@@ -25,38 +25,45 @@
 
 		   <pre><code>
 		   #! /usr/bin/python3
- # template.py - creates different document types with basic contents.
- # USAGE: python template.py <doc_type> <file_path> [en]
+                   # template.py - creates different document types with basic contents.
+                   # USAGE: python template.py <doc_type> <file_path> [en]
  
- import os
- import sys
+                   import os
+                   import sys
  
- # check if extension specified is ".tex" or ".html"
- if not sys.argv[2].endswith('.tex') or sys.argv[2].endswith('.html'):
-     raise Exception('File extension must be ".tex" or ".html".')
+                   # check if extension specified is ".tex" or ".html"
+                   if not sys.argv[2].endswith('.tex') or sys.argv[2].endswith('.html'):
+                   raise Exception('File extension must be ".tex" or ".html".')
  
- # create folder if folder specified doesn't exist.
- os.makedirs(os.path.dirname(sys.argv[2]), exist_ok=True)
+                   # create folder if folder specified doesn't exist.
+                   os.makedirs(os.path.dirname(sys.argv[2]), exist_ok=True)
  
- # open and read template depending on which type of document and language is specified.
- if len(sys.argv) == 4:
-     if sys.argv[1] == 'beamer':
-         t = open('/home/siwar/Documentos/python/own/beamer_template_en.tex')
-     if sys.argv[1] == 'pdf':
-         t = open('/home/siwar/Documentos/python/own/template_en.tex')
-     if sys.argv[1] == 'html':
-         t = open('/home/siwar/Documentos/python/own/plantilla_web_en.html')
-     template = t.read()
-     t.close()
- else:
-     if sys.argv[1] == 'beamer':
-         t = open('/home/siwar/Documentos/python/own/beamer_template_es.tex')
-     if sys.argv[1] == 'pdf':
-         t = open('/home/siwar/Documentos/python/own/template_es.tex')
-     if sys.argv[1] == 'html':
-         t = open('/home/siwar/Documentos/python/own/plantilla_web.html')
-     template = t.read()
-     t.close()
+                   # open and read template depending on which type of document and language is specified.
+                   if len(sys.argv) == 4:
+                       if sys.argv[1] == 'beamer':
+                           t = open(os.path.dirname(sys.argv[0]) + 'beamer_template_en.tex')
+                       if sys.argv[1] == 'pdf':
+                           t = open(os.path.dirname(sys.argv[0]) + 'template_en.tex')
+                       if sys.argv[1] == 'html':
+                           t = open(os.path.dirname(sys.argv[0]) + 'plantilla_web_en.html')
+                       template = t.read()
+                       t.close()
+                   else:
+                       if sys.argv[1] == 'beamer':
+                           t = open(os.path.dirname(sys.argv[0]) + 'beamer_template_es.tex')
+                       if sys.argv[1] == 'pdf':
+                           t = open(os.path.dirname(sys.argv[0]) + 'template_es.tex')
+                       if sys.argv[1] == 'html':
+                           t = open(os.path.dirname(sys.argv[0]) + 'plantilla_web.html')
+                       template = t.read()
+                       t.close()
+		   
+		   # write contents of template to desired ".tex" or ".html" file.
+                   File = open(sys.argv[2], 'w')
+                   File.write(template)
+                   File.close()
+
+                   print(sys.argv[2] + ' was created.')
 		   </code></pre>
            </section>
         </body>
