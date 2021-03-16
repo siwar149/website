@@ -20,6 +20,10 @@
 		   la parte importante del documento: el contenido.
 		   </p>
 
+		   <p>Lo mismo se puede hacer con documentos <i>.tex</i> cuyo prámbulo, donde se especifica el
+		   el formato (interlineado, tamaño de margenes, etc) e invocan los paquetes a usar, suele no
+		   variar significativamente.</p>
+
 		   <p>El codigo inferior es un <i>script</i> muy simple que realiza exactamente lo descrito líneas
 		   arriba.</p>
 
@@ -41,20 +45,20 @@
                    # open and read template depending on which type of document and language is specified.
                    if len(sys.argv) == 4:
                        if sys.argv[1] == 'beamer':
-                           t = open(os.path.dirname(sys.argv[0]) + 'beamer_template_en.tex')
+                           t = open(os.path.dirname(sys.argv[0]) + '/beamer_template_en.tex')
                        if sys.argv[1] == 'pdf':
-                           t = open(os.path.dirname(sys.argv[0]) + 'template_en.tex')
+                           t = open(os.path.dirname(sys.argv[0]) + '/template_en.tex')
                        if sys.argv[1] == 'html':
-                           t = open(os.path.dirname(sys.argv[0]) + 'plantilla_web_en.html')
+                           t = open(os.path.dirname(sys.argv[0]) + '/plantilla_web_en.html')
                        template = t.read()
                        t.close()
                    else:
                        if sys.argv[1] == 'beamer':
-                           t = open(os.path.dirname(sys.argv[0]) + 'beamer_template_es.tex')
+                           t = open(os.path.dirname(sys.argv[0]) + '/beamer_template_es.tex')
                        if sys.argv[1] == 'pdf':
-                           t = open(os.path.dirname(sys.argv[0]) + 'template_es.tex')
+                           t = open(os.path.dirname(sys.argv[0]) + '/template_es.tex')
                        if sys.argv[1] == 'html':
-                           t = open(os.path.dirname(sys.argv[0]) + 'plantilla_web.html')
+                           t = open(os.path.dirname(sys.argv[0]) + '/plantilla_web.html')
                        template = t.read()
                        t.close()
 		   
@@ -65,6 +69,9 @@
 
                    print(sys.argv[2] + ' was created.')
 		   </code></pre>
+
+		   <p>Para que este <i>script</i> funcione es necesario que las plantillas de cada tipo de
+		   documento se encuentren en el mismo directorio que el <i>script</i>.</p>
            </section>
         </body>
 
