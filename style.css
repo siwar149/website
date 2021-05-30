@@ -43,6 +43,10 @@ h3 {
 	color: #2B65EC;
 }
 
+h4 {
+	color: #C70039;
+}
+
 header, .main , footer {
 	width: 90%;
 	max-width: 1000px;
